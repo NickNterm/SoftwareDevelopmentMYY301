@@ -1,5 +1,7 @@
 package engine;
 
+import domain.IMainControllerImpl;
+
 public class IMainControllerFactory {
 
 	/**
@@ -18,7 +20,7 @@ public class IMainControllerFactory {
 	 */
 	public IMainController createMainController(ControllerTypeEnum controllerType) {
 		if (controllerType == ControllerTypeEnum.DEFAULT)
-			return new XXXX(); //TODO implement a materialization of IMainController
+			return new IMainControllerImpl(); //TODO implement a materialization of IMainController
 		return null;
 	}
 }

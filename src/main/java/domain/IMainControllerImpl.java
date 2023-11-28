@@ -10,6 +10,7 @@ import java.util.Set;
 import dom2app.IMeasurementVector;
 import dom2app.ISingleMeasureRequest;
 import engine.IMainController;
+import loader.LoadFileUseCase;
 import measurementfinder.FindSingleCountryIndicatorUseCase;
 import measurementfinder.FindSingleCountryIndicatorYearRangeUseCase;
 
@@ -20,8 +21,9 @@ public class IMainControllerImpl implements IMainController {
 
 	@Override
 	public List<IMeasurementVector> load(String fileName, String delimiter) throws FileNotFoundException, IOException {
-		// TODO Auto-generated method stub
-		return null;
+		LoadFileUseCase loader = new LoadFileUseCase();
+		List<IMeasurementVector> result = loader.load( fileName, delimiter);
+		return result;
 	}
 
 	@Override

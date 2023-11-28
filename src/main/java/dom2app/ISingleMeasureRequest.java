@@ -1,5 +1,5 @@
 package dom2app;
-// akis
+// akis3
 /**
  * An interface to be used as a means to communicate request results between front- and back-end
  * 

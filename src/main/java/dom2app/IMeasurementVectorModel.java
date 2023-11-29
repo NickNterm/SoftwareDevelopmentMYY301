@@ -12,6 +12,7 @@ public class IMeasurementVectorModel implements IMeasurementVector {
 	private String iso3;
 	private String indicator;
 	private List<Pair<Integer, Integer>> values;
+	private String stats;
 	
 	public IMeasurementVectorModel (
 			int objectId, 
@@ -27,6 +28,7 @@ public class IMeasurementVectorModel implements IMeasurementVector {
 		this.iso2 = iso2;
 		this.iso3 = iso3;
 		this.values = values;		
+		stats = "";
 	}
 
 	@Override
@@ -46,12 +48,15 @@ public class IMeasurementVectorModel implements IMeasurementVector {
 
 	@Override
 	public String getDescriptiveStatsAsString() {
-		return "";
+		return stats;
 	}
 
 	@Override
 	public String getRegressionResultAsString() {
 		return "";
 	}
-
+	
+	public void setDescriptiveStatsAsString(String stats) {
+		this.stats = stats;
+	}
 }

@@ -5,7 +5,7 @@ public class ISingleMeasureRequestModel implements ISingleMeasureRequest{
 	private String requestName;
 	private String country;
 	private String indicator;
-	private IMeasurementVector measurementVector;
+	private IMeasurementVectorModel measurementVector;
 
 	public ISingleMeasureRequestModel(String requestName, String country, String indicator) {
 		this.requestName = requestName;
@@ -44,7 +44,7 @@ public class ISingleMeasureRequestModel implements ISingleMeasureRequest{
 		return measurementVector.getRegressionResultAsString();
 	}
 	
-	public void setAnswer(IMeasurementVector vector) {
+	public void setAnswer(IMeasurementVectorModel vector) {
 		measurementVector = vector;
 	}
 

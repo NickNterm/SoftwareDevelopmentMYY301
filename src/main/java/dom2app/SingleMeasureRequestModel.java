@@ -1,13 +1,13 @@
 package dom2app;
 
-public class ISingleMeasureRequestModel implements ISingleMeasureRequest{
+public class SingleMeasureRequestModel implements ISingleMeasureRequest{
 	
 	private String requestName;
 	private String country;
 	private String indicator;
-	private IMeasurementVectorModel measurementVector;
+	private MeasurementVectorModel measurementVector;
 
-	public ISingleMeasureRequestModel(String requestName, String country, String indicator) {
+	public SingleMeasureRequestModel(String requestName, String country, String indicator) {
 		this.requestName = requestName;
 		this.country = country;
 		this.indicator = indicator;
@@ -44,7 +44,7 @@ public class ISingleMeasureRequestModel implements ISingleMeasureRequest{
 		return measurementVector.getRegressionResultAsString();
 	}
 	
-	public void setAnswer(IMeasurementVectorModel vector) {
+	public void setAnswer(MeasurementVectorModel vector) {
 		measurementVector = vector;
 	}
 

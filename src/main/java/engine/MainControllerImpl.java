@@ -10,21 +10,21 @@ import java.util.Set;
 import calculator.GetRegressionImpl;
 import calculator.GetStatsForMeasurementImpl;
 import dom2app.IMeasurementVector;
-import dom2app.IMeasurementVectorModel;
+import dom2app.MeasurementVectorModel;
 import dom2app.ISingleMeasureRequest;
-import dom2app.ISingleMeasureRequestModel;
+import dom2app.SingleMeasureRequestModel;
 import engine.IMainController;
 import measurementfinder.FindSingleCountryIndicatorUseCase;
 import measurementfinder.FindSingleCountryIndicatorYearRangeUseCase;
 
 public class MainControllerImpl implements IMainController {
 	
-	private List<IMeasurementVectorModel> values;
-	private List<ISingleMeasureRequestModel> requests;
+	private List<MeasurementVectorModel> values;
+	private List<SingleMeasureRequestModel> requests;
 	
 	public MainControllerImpl() {
-		requests = new ArrayList<ISingleMeasureRequestModel>();
-		values = new ArrayList<IMeasurementVectorModel>();
+		requests = new ArrayList<SingleMeasureRequestModel>();
+		values = new ArrayList<MeasurementVectorModel>();
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class MainControllerImpl implements IMainController {
 	public ISingleMeasureRequest findSingleCountryIndicator(String requestName, String countryName,
 			String indicatorString) throws IllegalArgumentException {
 		FindSingleCountryIndicatorUseCase useCase = new FindSingleCountryIndicatorUseCase(values);
-		ISingleMeasureRequestModel request =  useCase.findSingleCountryIndicator(requestName, countryName, indicatorString);
+		SingleMeasureRequestModel request =  useCase.findSingleCountryIndicator(requestName, countryName, indicatorString);
 		requests.add(request);
 		return request;
 	}
@@ -46,7 +46,7 @@ public class MainControllerImpl implements IMainController {
 	public ISingleMeasureRequest findSingleCountryIndicatorYearRange(String requestName, String countryName,
 			String indicatorString, int startYear, int endYear) throws IllegalArgumentException {
 		FindSingleCountryIndicatorYearRangeUseCase useCase = new FindSingleCountryIndicatorYearRangeUseCase(values);
-		ISingleMeasureRequestModel request =  useCase.findSingleCountryIndicatorYearRange(requestName, countryName, indicatorString, startYear, endYear);
+		SingleMeasureRequestModel request =  useCase.findSingleCountryIndicatorYearRange(requestName, countryName, indicatorString, startYear, endYear);
 		requests.add(request);
 		return request;
 	}
@@ -62,7 +62,7 @@ public class MainControllerImpl implements IMainController {
 
 	@Override
 	public ISingleMeasureRequest getRequestByName(String requestName) {
-		for(ISingleMeasureRequestModel request: requests) {
+		for(SingleMeasureRequestModel request: requests) {
 			if(request.getRequestName() == requestName) {
 				return request;
 			}
@@ -73,9 +73,9 @@ public class MainControllerImpl implements IMainController {
 	@Override
 	public ISingleMeasureRequest getRegression(String requestName) {
 		for(int i = 0; i < requests.size(); i++) {
-			ISingleMeasureRequestModel request = requests.get(i);
+			SingleMeasureRequestModel request = requests.get(i);
 			if(request.getRequestName() == requestName) {
-				IMeasurementVectorModel measurement = (IMeasurementVectorModel) request.getAnswer();
+				MeasurementVectorModel measurement = (MeasurementVectorModel) request.getAnswer();
 				String regression = new GetRegressionImpl().getRegression(measurement);
 				measurement.setDescriptiveStatsAsString(regression);
 				request.setAnswer(measurement);
@@ -88,9 +88,9 @@ public class MainControllerImpl implements IMainController {
 	@Override
 	public ISingleMeasureRequest getDescriptiveStats(String requestName) {
 		for(int i = 0; i < requests.size(); i++) {
-			ISingleMeasureRequestModel request = requests.get(i);
+			SingleMeasureRequestModel request = requests.get(i);
 			if(request.getRequestName() == requestName) {
-				IMeasurementVectorModel measurement = (IMeasurementVectorModel) request.getAnswer();
+				MeasurementVectorModel measurement = (MeasurementVectorModel) request.getAnswer();
 				String stats = new GetStatsForMeasurementImpl().getStats(measurement);
 				measurement.setDescriptiveStatsAsString(stats);
 				request.setAnswer(measurement);

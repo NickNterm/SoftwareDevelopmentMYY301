@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.commons.math3.util.Pair;
 
-public class IMeasurementVectorModel implements IMeasurementVector {
+public class MeasurementVectorModel implements IMeasurementVector {
 	
 	private int objectId;
 	private String country;
@@ -14,7 +14,7 @@ public class IMeasurementVectorModel implements IMeasurementVector {
 	private List<Pair<Integer, Integer>> values;
 	private String stats;
 	
-	public IMeasurementVectorModel (
+	public MeasurementVectorModel (
 			int objectId, 
 			String country,
 			String iso2, 

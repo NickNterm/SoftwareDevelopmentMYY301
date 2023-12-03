@@ -1,7 +1,7 @@
 package calculator;
 
-import dom2app.IMeasurementVector;
+import dom2app.MeasurementVectorModel;
 
 public interface GetStatsForMeasurement {
-	String getStats(IMeasurementVector vector);
+	String getStats(MeasurementVectorModel vector);
 }

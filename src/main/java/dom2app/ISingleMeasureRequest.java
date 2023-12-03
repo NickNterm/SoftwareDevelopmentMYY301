@@ -51,7 +51,4 @@ public interface ISingleMeasureRequest {
 	 * @return A String with the details of the regression details for the request
 	 */
 	String getRegressionResultString();
-	
-	void setAnswer(IMeasurementVector vector); //added by pavlos
-
 }

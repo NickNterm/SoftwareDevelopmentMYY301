@@ -2,11 +2,11 @@ package reporter;
 
 import java.io.IOException;
 
-import dom2app.ISingleMeasureRequestModel;
+import dom2app.SingleMeasureRequestModel;
 
 public class ReportResultMarkdown implements ReportResult{
 	@Override
-	public int reportToFile(String outputFilePath, ISingleMeasureRequestModel request) throws IOException {
+	public int reportToFile(String outputFilePath, SingleMeasureRequestModel request) throws IOException {
 		// TODO Auto-generated method stub
 		return 0;
 	}

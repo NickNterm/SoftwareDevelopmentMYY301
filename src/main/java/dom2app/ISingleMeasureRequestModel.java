@@ -25,7 +25,7 @@ public class ISingleMeasureRequestModel implements ISingleMeasureRequest{
 
 	@Override
 	public boolean isAnsweredFlag() {
-		return measurementVector == null;
+		return measurementVector != null;
 	}
 
 	@Override

@@ -4,6 +4,7 @@ import java.util.List;
 
 import dom2app.IMeasurementVector;
 import dom2app.ISingleMeasureRequest;
+import dom2app.ISingleMeasureRequestModel;
 
 public class FindSingleCountryIndicatorYearRangeUseCase implements FindSingleCountryIndicatorYearRange{
 
@@ -16,8 +17,17 @@ public class FindSingleCountryIndicatorYearRangeUseCase implements FindSingleCou
 	@Override
 	public ISingleMeasureRequest findSingleCountryIndicatorYearRange(String requestName, String countryName,
 			String indicatorString, int startYear, int endYear) throws IllegalArgumentException {
-		// TODO Auto-generated method stub
-		return null;
+		ISingleMeasureRequest request = new ISingleMeasureRequestModel(requestName,countryName,indicatorString);
+		IMeasurementVector ans;
+		for (int i = 0; i<vectors.size(); i++) {
+			ans = vectors.get(i);
+			if (countryName.equals(ans.getCountryName())) {
+				if (indicatorString.equals(ans.getIndicatorString())) {
+					request.setAnswer(ans);
+				}
+			}
+		}
+		return request;
 	}
 
 }

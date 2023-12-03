@@ -8,11 +8,13 @@ import java.util.Scanner;
 
 import org.apache.commons.math3.util.Pair;
 
-import dom2app.IMeasurementVector;
+import dom2app.MeasurementVectorModel;
+
+
 
 public class LoadFileUseCase {
-	public List<IMeasurementVector> load(String fileName, String delimiter) throws FileNotFoundException, IOException{
-		List<IMeasurementVector> list = new ArrayList<IMeasurementVector>();
+	public List<MeasurementVectorModel> load(String fileName, String delimiter) throws FileNotFoundException, IOException{
+		List<MeasurementVectorModel> list = new ArrayList<MeasurementVectorModel>();
 		Scanner in = new Scanner(System.in);
 		while(in.hasNext()) {
 			String line = in.nextLine();

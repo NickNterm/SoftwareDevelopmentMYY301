@@ -1,5 +1,6 @@
 package dom2app;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.math3.util.Pair;
@@ -13,6 +14,7 @@ public class MeasurementVectorModel implements IMeasurementVector {
 	private String indicator;
 	private List<Pair<Integer, Integer>> values;
 	private String stats;
+	private String reg;
 	
 	public MeasurementVectorModel (
 			int objectId, 
@@ -58,5 +60,20 @@ public class MeasurementVectorModel implements IMeasurementVector {
 	
 	public void setDescriptiveStatsAsString(String stats) {
 		this.stats = stats;
+	}
+	
+	public void setRegression(String reg) {
+		this.reg=reg;
+	}
+	
+	public void setRange(int startYear, int endYear) {
+		List<Pair<Integer, Integer>> range = new ArrayList<Pair<Integer,Integer>>();
+		for(Pair<Integer, Integer> pair: values) {
+			if(pair.getFirst() >= startYear && pair.getFirst() <= endYear) {
+				range.add(pair);
+			}
+		}
+		values.clear();
+		values.addAll(range);
 	}
 }

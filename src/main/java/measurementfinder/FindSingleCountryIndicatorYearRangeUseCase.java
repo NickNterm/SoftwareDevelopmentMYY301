@@ -22,6 +22,7 @@ public class FindSingleCountryIndicatorYearRangeUseCase implements FindSingleCou
 			ans = vectors.get(i);
 			if (countryName.equals(ans.getCountryName())) {
 				if (indicatorString.equals(ans.getIndicatorString())) {
+					ans.setRange(startYear, endYear);
 					request.setAnswer(ans);
 				}
 			}

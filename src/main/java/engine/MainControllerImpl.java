@@ -14,6 +14,7 @@ import dom2app.MeasurementVectorModel;
 import dom2app.ISingleMeasureRequest;
 import dom2app.SingleMeasureRequestModel;
 import engine.IMainController;
+import loader.LoadFileUseCase;
 import measurementfinder.FindSingleCountryIndicatorUseCase;
 import measurementfinder.FindSingleCountryIndicatorYearRangeUseCase;
 
@@ -29,8 +30,13 @@ public class MainControllerImpl implements IMainController {
 
 	@Override
 	public List<IMeasurementVector> load(String fileName, String delimiter) throws FileNotFoundException, IOException {
-		// TODO Auto-generated method stub
-		return null;
+		LoadFileUseCase loader = new LoadFileUseCase();
+		List<MeasurementVectorModel> result = loader.load( fileName, delimiter);
+		List<IMeasurementVector> temp= new ArrayList<IMeasurementVector>();
+		for (MeasurementVectorModel x : result) {
+			temp.add(x);
+		}
+		return temp;
 	}
 
 	@Override
@@ -77,7 +83,7 @@ public class MainControllerImpl implements IMainController {
 			if(request.getRequestName() == requestName) {
 				MeasurementVectorModel measurement = (MeasurementVectorModel) request.getAnswer();
 				String regression = new GetRegressionImpl().getRegression(measurement);
-				measurement.setDescriptiveStatsAsString(regression);
+				measurement.setRegression(regression);
 				request.setAnswer(measurement);
 				return request;
 			}

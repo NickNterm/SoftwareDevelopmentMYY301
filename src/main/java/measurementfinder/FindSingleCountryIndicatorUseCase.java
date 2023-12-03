@@ -2,22 +2,31 @@ package measurementfinder;
 
 import java.util.List;
 
-import dom2app.IMeasurementVector;
-import dom2app.ISingleMeasureRequest;
+import dom2app.MeasurementVectorModel;
+import dom2app.SingleMeasureRequestModel;
 
 public class FindSingleCountryIndicatorUseCase implements FindSingleCountryIndicator {
 	
-	private List<IMeasurementVector> vectors;
+	private List<MeasurementVectorModel> vectors;
 	
-	public FindSingleCountryIndicatorUseCase(List<IMeasurementVector> vectors) {
+	public FindSingleCountryIndicatorUseCase(List<MeasurementVectorModel> vectors) {
 		this.vectors=vectors;
 	}
 
 	@Override
-	public ISingleMeasureRequest findSingleCountryIndicator(String requestName, String countryName,
+	public SingleMeasureRequestModel findSingleCountryIndicator(String requestName, String countryName,
 			String indicatorString) throws IllegalArgumentException {
-		// TODO Auto-generated method stub
-		return null;
+		SingleMeasureRequestModel request = new SingleMeasureRequestModel(requestName,countryName,indicatorString);
+		MeasurementVectorModel ans;
+		for (int i = 0; i<vectors.size(); i++) {
+			ans = vectors.get(i);
+			if (countryName.equals(ans.getCountryName())) {
+				if (indicatorString.equals(ans.getIndicatorString())) {
+					request.setAnswer(ans);
+				}
+			}
+		}
+		return request;
 	}
 
 	

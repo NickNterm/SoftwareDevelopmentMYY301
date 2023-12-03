@@ -1,10 +1,10 @@
 package measurementfinder;
 
-import dom2app.ISingleMeasureRequest;
+import dom2app.SingleMeasureRequestModel;
 
 public interface FindSingleCountryIndicator {
 
-	ISingleMeasureRequest findSingleCountryIndicator(String requestName, String countryName, String indicatorString)
+	SingleMeasureRequestModel findSingleCountryIndicator(String requestName, String countryName, String indicatorString)
 			throws IllegalArgumentException;
 
 }

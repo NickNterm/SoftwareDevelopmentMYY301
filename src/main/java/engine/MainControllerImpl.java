@@ -31,11 +31,14 @@ public class MainControllerImpl implements IMainController {
 	@Override
 	public List<IMeasurementVector> load(String fileName, String delimiter) throws FileNotFoundException, IOException {
 		LoadFileUseCase loader = new LoadFileUseCase();
-		List<MeasurementVectorModel> result = loader.load( fileName, delimiter);
-		List<IMeasurementVector> temp= new ArrayList<IMeasurementVector>();
+		List<MeasurementVectorModel> result = loader.load(fileName, delimiter);
+		List<IMeasurementVector> temp = new ArrayList<IMeasurementVector>();
+		values.clear();
 		for (MeasurementVectorModel x : result) {
 			temp.add(x);
+			values.add(x);
 		}
+		
 		return temp;
 	}
 
@@ -63,7 +66,7 @@ public class MainControllerImpl implements IMainController {
 		for(ISingleMeasureRequest request: requests) {
 			set.add(request.getRequestName());
 		}
-		return null;
+		return set;
 	}
 
 	@Override
@@ -80,7 +83,7 @@ public class MainControllerImpl implements IMainController {
 	public ISingleMeasureRequest getRegression(String requestName) {
 		for(int i = 0; i < requests.size(); i++) {
 			SingleMeasureRequestModel request = requests.get(i);
-			if(request.getRequestName() == requestName) {
+			if(request.getRequestName().equals(requestName)) {
 				MeasurementVectorModel measurement = (MeasurementVectorModel) request.getAnswer();
 				String regression = new GetRegressionImpl().getRegression(measurement);
 				measurement.setRegression(regression);
@@ -95,7 +98,7 @@ public class MainControllerImpl implements IMainController {
 	public ISingleMeasureRequest getDescriptiveStats(String requestName) {
 		for(int i = 0; i < requests.size(); i++) {
 			SingleMeasureRequestModel request = requests.get(i);
-			if(request.getRequestName() == requestName) {
+			if(request.getRequestName().equals(requestName)) {
 				MeasurementVectorModel measurement = (MeasurementVectorModel) request.getAnswer();
 				String stats = new GetStatsForMeasurementImpl().getStats(measurement);
 				measurement.setDescriptiveStatsAsString(stats);

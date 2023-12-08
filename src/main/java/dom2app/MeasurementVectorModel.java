@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.apache.commons.math3.util.Pair;
 
-public class MeasurementVectorModel implements IMeasurementVector {
+public class MeasurementVectorModel implements IMeasurementVector, Cloneable {
 	
 	private int objectId;
 	private String country;
@@ -31,6 +31,7 @@ public class MeasurementVectorModel implements IMeasurementVector {
 		this.iso3 = iso3;
 		this.values = values;		
 		stats = "";
+		reg = "";
 	}
 
 	@Override
@@ -55,7 +56,7 @@ public class MeasurementVectorModel implements IMeasurementVector {
 
 	@Override
 	public String getRegressionResultAsString() {
-		return "";
+		return reg;
 	}
 	
 	public void setDescriptiveStatsAsString(String stats) {
@@ -63,7 +64,7 @@ public class MeasurementVectorModel implements IMeasurementVector {
 	}
 	
 	public void setRegression(String reg) {
-		this.reg=reg;
+		this.reg = reg;
 	}
 	
 	public void setRange(int startYear, int endYear) {
@@ -75,5 +76,22 @@ public class MeasurementVectorModel implements IMeasurementVector {
 		}
 		values.clear();
 		values.addAll(range);
+	}
+	
+	public MeasurementVectorModel clone() {
+		List<Pair<Integer, Integer>> tempValues = new ArrayList<Pair<Integer,Integer>>();
+		
+		for(Pair<Integer, Integer> pair: values) {	
+			tempValues.add(pair);
+		}
+		
+		return new MeasurementVectorModel(
+				objectId,
+				country,
+				iso2,
+				iso3,
+				indicator,
+				tempValues
+				);
 	}
 }

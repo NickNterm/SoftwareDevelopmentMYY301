@@ -10,7 +10,7 @@ public class FindSingleCountryIndicatorUseCase implements FindSingleCountryIndic
 	private List<MeasurementVectorModel> vectors;
 	
 	public FindSingleCountryIndicatorUseCase(List<MeasurementVectorModel> vectors) {
-		this.vectors=vectors;
+		this.vectors = vectors;
 	}
 
 	@Override
@@ -23,10 +23,11 @@ public class FindSingleCountryIndicatorUseCase implements FindSingleCountryIndic
 			if (countryName.equals(ans.getCountryName())) {
 				if (indicatorString.equals(ans.getIndicatorString())) {
 					request.setAnswer(ans);
+					return request;
 				}
 			}
 		}
-		return request;
+		throw new IllegalArgumentException();
 	}
 
 	

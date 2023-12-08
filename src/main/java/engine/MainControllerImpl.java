@@ -17,6 +17,8 @@ import engine.IMainController;
 import loader.LoadFileUseCase;
 import measurementfinder.FindSingleCountryIndicatorUseCase;
 import measurementfinder.FindSingleCountryIndicatorYearRangeUseCase;
+import reporter.ReportResult;
+import reporter.ReportResultFactory;
 
 public class MainControllerImpl implements IMainController {
 	
@@ -111,6 +113,15 @@ public class MainControllerImpl implements IMainController {
 
 	@Override
 	public int reportToFile(String outputFilePath, String requestName, String reportType) throws IOException {
+		ReportResultFactory factory = new ReportResultFactory();
+		ReportResult reporter = factory.createReporter(reportType);
+		SingleMeasureRequestModel model = null;
+		for(SingleMeasureRequestModel request: requests) {
+			if(request.getRequestName() == requestName) {
+				model = request;
+			}
+		}
+		reporter.reportToFile(outputFilePath, model);
 		return 0;
 	}
 

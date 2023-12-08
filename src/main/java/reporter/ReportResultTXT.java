@@ -10,11 +10,10 @@ public class ReportResultTXT implements ReportResult{
 
 	@Override
 	public int reportToFile(String outputFilePath,SingleMeasureRequestModel request) throws IOException {
-		File report = new File("Report.txt");
-		FileWriter myWriter = new FileWriter(outputFilePath+"Report.txt");
-		myWriter.write("");
+		File report = new File(outputFilePath);
+		FileWriter myWriter = new FileWriter(outputFilePath);
+		myWriter.write("testing");
 		myWriter.close();
 		return 0;
 	}
-
 }

@@ -94,4 +94,9 @@ public class MeasurementVectorModel implements IMeasurementVector, Cloneable {
 				tempValues
 				);
 	}
+	
+	public boolean equals(MeasurementVectorModel model) {
+
+	}
+	}
 }

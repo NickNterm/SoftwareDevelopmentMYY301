@@ -1,15 +1,14 @@
 package reporter;
 
 public class ReportResultFactory {
-	public enum ReportTypes{ HTML, Markdown, TXT }
 	
-	public ReportResult createMainController(ReportTypes  reportType) {
+	public ReportResult createMainController(String  reportType) {
 		switch(reportType) {
-		case HTML:
+		case "html":
 			return new ReportResultHTML();
-		case Markdown:
+		case "md":
 			return new ReportResultMarkdown();
-		case TXT:
+		case "text":
 			return new ReportResultTXT();
 		}
 		return null;

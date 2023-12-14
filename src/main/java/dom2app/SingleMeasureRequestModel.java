@@ -5,12 +5,14 @@ public class SingleMeasureRequestModel implements ISingleMeasureRequest{
 	private String requestName;
 	private String country;
 	private String indicator;
+	private boolean isAnsweredFlag;
 	private MeasurementVectorModel measurementVector;
 
 	public SingleMeasureRequestModel(String requestName, String country, String indicator) {
 		this.requestName = requestName;
 		this.country = country;
 		this.indicator = indicator;
+		isAnsweredFlag=false;
 	}
 	
 	@Override
@@ -25,7 +27,7 @@ public class SingleMeasureRequestModel implements ISingleMeasureRequest{
 
 	@Override
 	public boolean isAnsweredFlag() {
-		return measurementVector == null;
+		return isAnsweredFlag;
 	}
 
 	@Override
@@ -46,6 +48,7 @@ public class SingleMeasureRequestModel implements ISingleMeasureRequest{
 	
 	public void setAnswer(MeasurementVectorModel vector) {
 		measurementVector = vector;
+		isAnsweredFlag=true;
 	}
 
 }

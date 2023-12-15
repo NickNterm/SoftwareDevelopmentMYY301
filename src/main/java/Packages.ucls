@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="engine" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/engine" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="48" width="100" x="659" y="125"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="app.examples" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/app/examples" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="48" width="104" x="759" y="-51"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="loader" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/loader" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="48" width="100" x="346" y="213"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="reporter" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/reporter" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="48" width="100" x="486" y="213"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="app.gui" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/app/gui" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="48" width="100" x="903" y="-51"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="measurementfinder" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="48" width="137" x="626" y="213"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="7" language="java" name="app.gui.jtableview" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/app/gui/jtableview" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="48" width="125" x="799" y="125"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="8" language="java" name="calculator" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/calculator" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="48" width="100" x="803" y="213"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="9" language="java" name="dom2app" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/dom2app" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="48" width="100" x="803" y="301"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="10" language="java" name="app" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/app" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="48" width="100" x="799" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="11">    
+    <bendpoint x="933" y="213"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="13">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="15">    
+    <bendpoint x="768" y="37"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="17">    
+    <bendpoint x="954" y="125"/>    
+    <bendpoint x="954" y="213"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="18">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="19">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="24">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="25">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="26">    
+    <bendpoint x="929" y="37"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

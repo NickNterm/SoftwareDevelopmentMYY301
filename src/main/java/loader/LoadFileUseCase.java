@@ -44,7 +44,7 @@ public class LoadFileUseCase {
 				pairs.add(pair);
 			}
 			MeasurementVectorModel model = new MeasurementVectorModel(objectId, country, iso2, iso3, indicator, pairs);
-			System.out.println(country + " --- "+ indicator + " --- " + pairs.size() + pairs.get(pairs.size()-1).getFirst());
+			System.out.println(country + " --- " + indicator + " --- " + pairs.size() + pairs.get(pairs.size()-1).getFirst());
 			list.add(model);
 		}
 		return list;

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="dom2app.SingleMeasureRequestModel" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/dom2app/SingleMeasureRequestModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="259" width="264" x="1601" y="651"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="engine.MainControllerImpl" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/engine/MainControllerImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="223" width="448" x="1551" y="-131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="measurementfinder.FindSingleCountryIndicatorYearRange" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicatorYearRange.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="79" width="474" x="1275" y="514"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="engine.IMainControllerFactory" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/engine/IMainControllerFactory.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="308" x="1815" y="-268"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="calculator.GetStatsForMeasurement" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/calculator/GetStatsForMeasurement.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="79" width="230" x="479" y="651"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="6" language="java" name="reporter.ReportResult" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/reporter/ReportResult.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="79" width="276" x="917" y="514"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="7" language="java" name="engine.IMainController" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/engine/IMainController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="205" width="448" x="2560" y="132"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="reporter.ReportResultHTML" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/reporter/ReportResultHTML.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="276" x="877" y="377"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="loader.LoadFileUseCase" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/loader/LoadFileUseCase.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="270" x="209" y="132"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="measurementfinder.FindSingleCountryIndicatorUseCase" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicatorUseCase.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="392" x="2065" y="377"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="calculator.GetStatsForMeasurementImpl" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/calculator/GetStatsForMeasurementImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="230" x="500" y="514"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="dom2app.MeasurementVectorModel" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/dom2app/MeasurementVectorModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="457" width="427" x="751" y="950"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="13" language="java" name="measurementfinder.FindSingleCountryIndicator" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="79" width="392" x="1810" y="514"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="14" language="java" name="dom2app.ISingleMeasureRequest" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/dom2app/ISingleMeasureRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="169" width="192" x="2520" y="950"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="15" language="java" name="reporter.ReportResultFactory" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/reporter/ReportResultFactory.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="201" x="1174" y="132"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="reporter.ReportResultTXT" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/reporter/ReportResultTXT.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="276" x="561" y="377"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="17" language="java" name="dom2app.IMeasurementVector" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/dom2app/IMeasurementVector.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="151" width="252" x="1601" y="1447"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="18" language="java" name="measurementfinder.FindSingleCountryIndicatorYearRangeUseCase" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicatorYearRangeUseCase.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="474" x="1551" y="377"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="19" language="java" name="engine.IMainControllerFactory.ControllerTypeEnum" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/engine/IMainControllerFactory.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="176" x="1335" y="-131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="20" language="java" name="reporter.ReportResultMarkdown" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/reporter/ReportResultMarkdown.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="276" x="1214" y="377"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="21" language="java" name="calculator.GetRegression" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/calculator/GetRegression.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="79" width="234" x="456" y="950"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="22" language="java" name="calculator.GetRegressionImpl" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/calculator/GetRegressionImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="115" width="234" x="184" y="651"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="23">    
+    <bendpoint x="1244" y="514"/>    
+    <bendpoint x="1244" y="651"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="24" name="vectors"/>      
+      <multiplicity id="25" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="26">    
+    <bendpoint x="1779" y="514"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="27">    
+    <bendpoint x="2238" y="657"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="28">    
+    <bendpoint x="2742" y="377"/>    
+    <bendpoint x="2742" y="514"/>    
+    <bendpoint x="2742" y="651"/>    
+    <bendpoint x="2736" y="1156"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="29">    
+    <bendpoint x="1560" y="132"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="30">    
+    <bendpoint x="448" y="377"/>    
+    <bendpoint x="448" y="514"/>    
+    <bendpoint x="448" y="651"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="31">    
+    <bendpoint x="509" y="132"/>    
+    <bendpoint x="509" y="377"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="32">    
+    <bendpoint x="2508" y="132"/>    
+    <bendpoint x="2508" y="377"/>    
+    <bendpoint x="2508" y="514"/>    
+    <bendpoint x="2508" y="651"/>    
+    <bendpoint x="2489" y="950"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="34">    
+    <bendpoint x="2196" y="-131"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <realization id="35">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="36">    
+    <bendpoint x="1520" y="132"/>    
+    <bendpoint x="1211" y="356"/>    
+    <bendpoint x="1187" y="465"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="37">    
+    <bendpoint x="2529" y="132"/>    
+    <bendpoint x="2529" y="377"/>    
+    <bendpoint x="2529" y="514"/>    
+    <bendpoint x="2529" y="651"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <realization id="38">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <dependency id="39">    
+    <bendpoint x="1817" y="132"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="40">    
+    <bendpoint x="2550" y="377"/>    
+    <bendpoint x="2550" y="514"/>    
+    <bendpoint x="2550" y="651"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <realization id="41">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="14"/>  
+  </realization>  
+  <dependency id="42">    
+    <bendpoint x="730" y="1416"/>    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="43">    
+    <bendpoint x="856" y="503"/>    
+    <bendpoint x="857" y="664"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="44">    
+    <bendpoint x="1183" y="377"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="45">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="46">    
+    <bendpoint x="530" y="132"/>    
+    <bendpoint x="530" y="377"/>    
+    <bendpoint x="760" y="514"/>    
+    <bendpoint x="760" y="651"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="47" name="values"/>      
+      <multiplicity id="48" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="49">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="50">    
+    <bendpoint x="1256" y="501"/>    
+    <bendpoint x="1254" y="602"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="51">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="52">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="53">    
+    <bendpoint x="2487" y="514"/>    
+    <bendpoint x="2487" y="651"/>    
+    <bendpoint x="1914" y="957"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="54" name="vectors"/>      
+      <multiplicity id="55" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="56">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="57">    
+    <bendpoint x="868" y="612"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="58">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <realization id="59">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="60">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <dependency id="61">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <realization id="62">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <dependency id="63">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="64">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <realization id="65">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <dependency id="66">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="67">    
+    <bendpoint x="645" y="1500"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="68">    
+    <bendpoint x="178" y="132"/>    
+    <bendpoint x="178" y="377"/>    
+    <bendpoint x="178" y="514"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="69">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <realization id="70">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <nesting id="71">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </nesting>  
+  <association id="72">    
+    <bendpoint x="2487" y="132"/>    
+    <bendpoint x="2487" y="377"/>    
+    <bendpoint x="2466" y="514"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="73" name="requests"/>      
+      <multiplicity id="74" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="75">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="76" name="measurementVector"/>      
+      <multiplicity id="77" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="78">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <realization id="79">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="80">    
+    <bendpoint x="739" y="651"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

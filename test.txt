@@ -1,0 +1,12 @@
+What to do:
+-- remove extra prints
+-- ask ton typo gia regression and thelei prwta na ta blepoume kai meta na ta thetoyme H na ta thetoyme me the singlerequest
+-- comments ston kwdika mas
+-- change the names of the files
+
+report
+-- na doyme ti einai oi actors etc kai na ta grapsoume gia to report
+
+akis: tests
+download: Restaurant Weekly Evaluation 
+

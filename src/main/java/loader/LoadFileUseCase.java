@@ -13,6 +13,7 @@ import dom2app.MeasurementVectorModel;
 
 
 
+// a use case for loading a data from a file
 public class LoadFileUseCase {
 	public List<MeasurementVectorModel> load(String fileName, String delimiter) throws FileNotFoundException, IOException{
 		List<MeasurementVectorModel> list = new ArrayList<MeasurementVectorModel>();

@@ -25,8 +25,6 @@ public class TestLoadFileUseCase {
 			System.out.println(pairs.get(i));
 		}
 		
-		                     			
-		
 		MeasurementVectorModel testModel = new MeasurementVectorModel(
 				351,
 				"Grenada",
@@ -35,7 +33,9 @@ public class TestLoadFileUseCase {
 				"Storm",
 				pairs
 				);
+
 		List<MeasurementVectorModel> data = new ArrayList<MeasurementVectorModel>();
+
 		try {
 			data = loader.load("src/test/resources/input/gre.tsv", "\t");
 		} catch (Exception e) {

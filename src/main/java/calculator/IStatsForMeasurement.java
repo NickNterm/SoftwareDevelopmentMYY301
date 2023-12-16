@@ -2,6 +2,6 @@ package calculator;
 
 import dom2app.MeasurementVectorModel;
 
-public interface GetStatsForMeasurement {
+public interface IStatsForMeasurement {
 	String getStats(MeasurementVectorModel vector);
 }

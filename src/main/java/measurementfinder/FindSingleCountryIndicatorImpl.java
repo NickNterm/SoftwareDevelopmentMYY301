@@ -5,11 +5,11 @@ import java.util.List;
 import dom2app.MeasurementVectorModel;
 import dom2app.SingleMeasureRequestModel;
 
-public class FindSingleCountryIndicatorUseCase implements FindSingleCountryIndicator {
+public class FindSingleCountryIndicatorImpl implements IFindSingleCountryIndicator {
 	
 	private List<MeasurementVectorModel> vectors;
 	
-	public FindSingleCountryIndicatorUseCase(List<MeasurementVectorModel> vectors) {
+	public FindSingleCountryIndicatorImpl(List<MeasurementVectorModel> vectors) {
 		this.vectors = vectors;
 	}
 

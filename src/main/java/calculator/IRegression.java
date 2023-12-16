@@ -2,6 +2,6 @@ package calculator;
 
 import dom2app.IMeasurementVector;
 
-public interface GetRegression {
+public interface IRegression {
 	String getRegression(IMeasurementVector vector);
 }

@@ -1,7 +1,7 @@
 package reporter;
 
 public class ReportResultFactory {
-    public ReportResult createReporter(String reportType) {
+    public IReportResult createReporter(String reportType) {
         switch (reportType) {
             case "html":
                 return new ReportResultHTML();

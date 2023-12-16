@@ -4,7 +4,7 @@ import org.apache.commons.math3.stat.regression.SimpleRegression;
 
 import dom2app.IMeasurementVector;
 
-public class GetRegressionImpl implements GetRegression{
+public class RegressionModel implements IRegression{
 
 	@Override
 	public String getRegression(IMeasurementVector vector) {

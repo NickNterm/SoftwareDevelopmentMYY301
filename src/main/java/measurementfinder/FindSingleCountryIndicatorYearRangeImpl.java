@@ -5,11 +5,11 @@ import java.util.List;
 import dom2app.MeasurementVectorModel;
 import dom2app.SingleMeasureRequestModel;
 
-public class FindSingleCountryIndicatorYearRangeUseCase implements FindSingleCountryIndicatorYearRange{
+public class FindSingleCountryIndicatorYearRangeImpl implements IFindSingleCountryIndicatorYearRange{
 
 	private List<MeasurementVectorModel> vectors;
 	
-	public FindSingleCountryIndicatorYearRangeUseCase(List<MeasurementVectorModel> vectors) {
+	public FindSingleCountryIndicatorYearRangeImpl(List<MeasurementVectorModel> vectors) {
 		this.vectors = vectors;
 	}
 	

@@ -14,12 +14,13 @@ import dom2app.MeasurementVectorModel;
 
 
 // a use case for loading a data from a file
-public class LoadFileUseCase {
+public class Loader {
 	public List<MeasurementVectorModel> load(String fileName, String delimiter) throws FileNotFoundException, IOException{
 		List<MeasurementVectorModel> list = new ArrayList<MeasurementVectorModel>();
 		
 		 File file = new File(fileName);
 		 Scanner in = new Scanner(file);
+
 		 in.nextLine();
 		 while(in.hasNextLine()) {
 			String line = in.nextLine();

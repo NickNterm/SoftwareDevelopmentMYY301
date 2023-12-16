@@ -42,7 +42,7 @@ public class TestLoadFileUseCase {
 			e.printStackTrace();
 		}
         assertSame(9, data.size());  
-        assertEquals(data.get(data.size() - 2), testModel);
+        assertTrue(data.get(data.size() - 2).equals(testModel));
     } 
 	
 	@Test

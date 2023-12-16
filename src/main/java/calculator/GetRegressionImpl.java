@@ -17,6 +17,7 @@ public class GetRegressionImpl implements GetRegression{
 		}
 		regression.addData(data);
 		String tendency = getLabel(regression.getSlope());
+		System.out.println("[intercept=" + regression.getIntercept() + ", slope=" + regression.getSlope() + ", slopeError=" + regression.getSlopeStdErr() + ", " + tendency + "]");
 		return "[intercept=" + regression.getIntercept() + ", slope=" + regression.getSlope() + ", slopeError=" + regression.getSlopeStdErr() + ", " + tendency + "]";
 	}
 	

@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
   realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="measurementfinder.FindSingleCountryIndicator" 
+  <interface id="1" language="java" name="measurementfinder.IFindSingleCountryIndicatorYearRange" 
     project="2023-24_4339_5440_5477_NaturalDisasters" 
-    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicator.java" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/IFindSingleCountryIndicatorYearRange.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="79" width="392" x="635" y="417"/>    
+    <position height="-1" width="-1" x="852" y="469"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="2" language="java" name="measurementfinder.FindSingleCountryIndicatorYearRange" 
+  <class id="2" language="java" name="measurementfinder.FindSingleCountryIndicatorImpl" 
     project="2023-24_4339_5440_5477_NaturalDisasters" 
-    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicatorYearRange.java" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicatorImpl.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="79" width="474" x="121" y="417"/>    
+    <position height="-1" width="-1" x="379" y="332"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="measurementfinder.FindSingleCountryIndicatorYearRangeImpl" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicatorYearRangeImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="852" y="332"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="measurementfinder.IFindSingleCountryIndicator" 
+    project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/IFindSingleCountryIndicator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="379" y="469"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="3" language="java" name="measurementfinder.FindSingleCountryIndicatorYearRangeUseCase" 
-    project="2023-24_4339_5440_5477_NaturalDisasters" 
-    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicatorYearRangeUseCase.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="115" width="474" x="121" y="262"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="measurementfinder.FindSingleCountryIndicatorUseCase" 
-    project="2023-24_4339_5440_5477_NaturalDisasters" 
-    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/measurementfinder/FindSingleCountryIndicatorUseCase.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="115" width="392" x="635" y="262"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
   <realization id="5">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
   </realization>  
   <realization id="6">    
     <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="TARGET" refId="1"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

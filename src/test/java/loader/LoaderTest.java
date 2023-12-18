@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import dom2app.MeasurementVectorModel;
 
-public class TestLoadFileUseCase {
+public class LoaderTest {
     private Loader loader;
     private MeasurementVectorModel testModel;
 
@@ -63,7 +63,7 @@ public class TestLoadFileUseCase {
 
         assertNotNull(data);
 
-        assertTrue(data.get(data.size() - 2).equals(testModel));
+        assertTrue(data.get(data.size() - 2).checkEquals(testModel));
     }
 
     @Test

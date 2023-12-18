@@ -13,7 +13,6 @@ import dom2app.IMeasurementVector;
 import dom2app.MeasurementVectorModel;
 import dom2app.ISingleMeasureRequest;
 import dom2app.SingleMeasureRequestModel;
-import engine.IMainController;
 import loader.Loader;
 import measurementfinder.FindSingleCountryIndicatorImpl;
 import measurementfinder.FindSingleCountryIndicatorYearRangeImpl;

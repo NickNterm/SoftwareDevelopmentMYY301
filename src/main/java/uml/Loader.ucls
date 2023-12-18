@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
   realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="loader.LoadFileUseCase" project="2023-24_4339_5440_5477_NaturalDisasters" 
-    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/loader/LoadFileUseCase.java" binary="false" 
+  <class id="1" language="java" name="loader.Loader" project="2023-24_4339_5440_5477_NaturalDisasters" 
+    file="/2023-24_4339_5440_5477_NaturalDisasters/src/main/java/loader/Loader.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="486" y="319"/>    
+    <position height="-1" width="-1" x="486" y="282"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      

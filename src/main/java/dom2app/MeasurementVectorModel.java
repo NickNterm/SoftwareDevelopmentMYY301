@@ -105,7 +105,7 @@ public class MeasurementVectorModel implements IMeasurementVector, Cloneable {
                 tempValues);
     }
 
-    public boolean equals(MeasurementVectorModel model) {
+    public boolean checkEquals(MeasurementVectorModel model) {
         boolean result = true;
         for (int i = 0; i < values.size(); i++) {
             if (!values.get(i).equals(model.getMeasurements().get(i))) {

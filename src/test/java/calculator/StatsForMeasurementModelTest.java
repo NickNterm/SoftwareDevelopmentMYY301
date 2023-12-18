@@ -12,11 +12,13 @@ import org.junit.Test;
 
 import dom2app.MeasurementVectorModel;
 
-public class GetRegressionTest {
+public class StatsForMeasurementModelTest {
+    private StatsForMeasurementModel statsForMeasurementModel;
     private MeasurementVectorModel testModel;
 
     @Before
-    public void setUp() {
+    public void setUp() throws Exception {
+        statsForMeasurementModel = new StatsForMeasurementModel();
         List<Pair<Integer, Integer>> pairs = new ArrayList<Pair<Integer, Integer>>();
         for (int i = 0; i < 25; i++) {
             if (i == 0 || i == 10 || i == 19 || i == 22 || i == 24) {
@@ -36,13 +38,12 @@ public class GetRegressionTest {
     }
 
     @Test
-    public void getRegression() {
-        RegressionModel regression = new RegressionModel();
-        String regressionresult = regression.getRegression(testModel);
-        String result = "[intercept=-22.784615384615382, slope=0.011538461538461537, slopeError=0.011313299180991871, Tendency stable]";
+    public void testStatsForMeasurementModel() {
+        String statsResult = statsForMeasurementModel.getStats(testModel);
+        String result = "[count=25, min=0, gMean=0.0, mean=0.20000000000000004, median=0, max=1, kurtosis=0.5928853754940722, stdev=0.408248290463863, sum=5]";
 
-        assertNotNull(regressionresult);
+        assertNotNull(statsResult);
 
-        assertEquals(regressionresult, result);
+        assertEquals(statsResult, result);
     }
 }
